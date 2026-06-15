@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Text Toolkit</h1>
+  <p class="sub">Paste some text. We'll count it and tidy the spacing. Nothing is saved.</p>
+
+  <form method="post" action="/">
+    <label for="text" class="lbl">Your text</label>
+    <textarea id="text" name="text" rows="8" maxlength="{{ max_len }}"
+              placeholder="Type or paste here…">{{ text }}</textarea>
+    <div class="row">
+      <button type="submit" class="btn">Analyze</button>
+      <span class="hint">Up to {{ max_len }} characters.</span>
+    </div>
+  </form>
+
+  {% if result %}
+    <section class="result" aria-live="polite">
+      <div class="stats">
+        <div class="stat"><b>{{ result.words }}</b><span>words</span></div>
+        <div class="stat"><b>{{ result.characters }}</b><span>characters</span></div>
+        <div class="stat"><b>{{ result.lines }}</b><span>lines</span></div>
+      </div>
+      {% if result.cleaned %}
+        <h2>Cleaned text</h2>
+        {# {{ ... }} is auto-escaped by Jinja2, so any HTML the user typed is shown as text, not run. #}
+        <pre class="out">{{ result.cleaned }}</pre>
+      {% endif %}
+    </section>
+  {% endif %}
+{% endblock %}
