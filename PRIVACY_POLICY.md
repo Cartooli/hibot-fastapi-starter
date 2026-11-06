@@ -4,7 +4,7 @@
 
 **Service:** [YOUR APP NAME]
 **Operator:** Hi, Bot
-**Contact:** rob@cartooli.com
+**Contact:** open a GitHub Issue at https://github.com/Cartooli/hibot-fastapi-starter/issues (no public email)
 **Last updated:** [DATE]
 
 ## What we collect
@@ -23,4 +23,4 @@ This app is general-audience and does not knowingly collect personal information
 We may update this policy; material changes will be reflected here.
 
 ## Contact
-Questions? Email rob@cartooli.com.
+Questions? Open a GitHub Issue at https://github.com/Cartooli/hibot-fastapi-starter/issues.
