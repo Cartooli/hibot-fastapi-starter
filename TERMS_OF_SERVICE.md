@@ -5,7 +5,7 @@
 
 **Service:** [YOUR APP NAME]
 **Operator:** Hi, Bot
-**Contact:** rob@cartooli.com
+**Contact:** open a GitHub Issue at https://github.com/Cartooli/hibot-fastapi-starter/issues (no public email)
 **Governing law:** [JURISDICTION]
 **Last updated:** [DATE]
 
@@ -28,4 +28,4 @@ The app is provided without warranties of any kind. To the extent permitted by l
 We may update these terms. Continued use after changes means you accept them.
 
 ## 7. Contact
-Questions? Email rob@cartooli.com.
+Questions? Open a GitHub Issue at https://github.com/Cartooli/hibot-fastapi-starter/issues.
